@@ -2,18 +2,31 @@
 Simple app for planning spendings
 
 Hello,
+
 a short guide for this app:
+
 My task was to build an app that counts 3 different jobs for InnerWorkings.
+
 All the selections predefined in checkboxes with taxes and extra-margin as well as the prices are according to task clues (I assumed each price was per one item).
+
 Job 1: give 1 as amount in 1st and 2nd item (envelopes and letterheads) and click "Count total expenses" at the bottom of the page. MAKE SURE NO OTHER ITEMS ARE CHOSEN
+
 Job 2: give 1 as amount in 3rd item (T-shirts) and click "Count total expenses" at the bottom of the page. MAKE SURE NO OTHER ITEMS ARE CHOSEN
+
 Job 3: give 1 as amount in 4th and 5th item (frisbees and yoyos) and click "Count total expenses" at the bottom of the page. MAKE SURE NO OTHER ITEMS ARE CHOSEN
+
 However this app is quite universal, you can do different jobs on it, not just those specified in the task description.
+
 Checkboxes are disabled until amount of particular item is given.
+
 You can peek the results without counting total sum by clicking/unclicking checkbox and pressing APPLY button.
+
 If you click a checkbox but forget to press APPLY - no worries, it will be counted when you click "Count total expenses" button anyways.
+
 Enjoy!
+
 -----------------------------
+
 Below is a code assignment we would like the candidate to complete and return to us. 
 1.	Include this problem statement with the solution.
 2.	Use ECMAScript/HTML/CSS for the solution. No AJAX requests to server is allowed, i.e. all business logic should be implemented on the client side.
