@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>InnerWorkings - recruitment task</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Recruitment task for InnerWorkings</h1>
+  </header>
+  <form>
+  <!--Envelopes -->
+  <fieldset id="envelopes">
+    <legend>Envelopes ($520)</legend>
+      <input id="noEnvelopes" name="amount" value=0 type="number" Placeholder="Specify amount">
+      <input id="envelopeTax" type="checkbox" name="tax" value="tax" disabled> Tax-free
+      <input id="envelopeMargin" type="checkbox" name="extra-margin" value="extra-margin" checked disabled> Extra-margin
+    <input id="addEnvelopes" type="button" value="Apply">
+    <p id="envResultJustTax"></p>
+    <p id="envResult"></p>
+  </fieldset>
+
+  <!--Letterhead-->
+  <fieldset id="letterhead">
+    <legend>Letterhead ($1983.37)</legend>
+      <input id="noLetters" name="amount" Placeholder="Specify amount" value=0 type="number">
+      <input id="letterTax" type="checkbox" name="tax" value="tax" checked disabled> Tax-free
+      <input id="letterMargin" type="checkbox" name="extra-margin" value="extra-margin" checked disabled> Extra-margin
+    <input id="addLetters" type="button" value="Apply">
+    <p id="lettResultJustTax"></p>
+    <p id="lettResult"></p>
+  </fieldset>
+
+  <!--T-shirt-->
+  <fieldset id="Tshirt">
+    <legend>T-shirt ($294.04)</legend>
+      <input id="noShirts" name="amount" Placeholder="Specify amount" value=0 type="number">
+      <input id="shirtTax" type="checkbox" name="tax" value="tax" disabled> Tax-free
+      <input id="shirtMargin" type="checkbox" name="extra-margin" value="extra-margin" disabled> Extra-margin
+    <input id="addShirts" type="button" value="Apply">
+    <p id="shirtsResultJustTax"></p>
+    <p id="shirtsResult"></p>
+  </fieldset>
+
+  <!--frisbee -->
+  <fieldset id="frisbee">
+    <legend>Frisbee ($19385.38)</legend>
+      <input id="noFrisbee" name="amount" Placeholder="Specify amount" value=0 type="number">
+      <input id="frisbeeTax" type="checkbox" name="tax" value="tax" checked disabled> Tax-free
+      <input id="frisbeeMargin" type="checkbox" name="extra-margin" value="extra-margin" checked disabled> Extra-margin
+    <input id="addFrisbee" type="button" value="Apply">
+    <p id="frisbeeResultJustTax"></p>
+    <p id="frisbeeResult"></p>
+  </fieldset>
+
+  <!--yoyo -->
+  <fieldset id="yoyo">
+    <legend>Yoyo ($1829)</legend>
+      <input id="noYoyo" name="amount" Placeholder="Specify amount" value=0 type="number">
+      <input id="yoyoTax" type="checkbox" name="tax" value="tax" checked disabled> Tax-free
+      <input id="yoyoMargin" type="checkbox" name="extra-margin" value="extra-margin" checked disabled> Extra-margin
+    <input id="addYoyo" type="button" value="Apply">
+    <p id="yoyoResultJustTax"></p>
+    <p id="yoyoResult"></p>
+  </fieldset>
+</form>
+<button id="countAllButton">Count total expenses</Button>
+<p id="countAllResult"></p>
+<script  src="js/index.js"></script>
+</body>
+</html>
