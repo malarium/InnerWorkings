@@ -1,19 +1,32 @@
 //variables and event listeners
-const allButton = document.querySelector("#countAllButton");
-const allResult = document.querySelector("#countAllResult");
+const allButton = document.querySelector("#countAllButton");//button to count everything
+const allResult = document.querySelector("#countAllResult");//display result
+allButton.addEventListener("click", sumUpAll);
 
+//number of items
 const numberOfEnvelopes = document.querySelector("#noEnvelopes");
 const numberOfLetters = document.querySelector("#noLetters");
 const numberOfShirts = document.querySelector("#noShirts");
 const numberOfFrisbee = document.querySelector("#noFrisbee");
 const numberOfYoyo = document.querySelector("#noYoyo");
 
-const envClick = document.querySelector("#addEnvelopes");
-const lettClick = document.querySelector("#addLetters");
-const shirtClick = document.querySelector("#addShirts");
-const frisbeeClick = document.querySelector("#addFrisbee");
-const yoyoClick = document.querySelector("#addYoyo");
+//event listeners - uses propagation
+const envelopes = document.querySelector("#envelopes");
+envelopes.addEventListener("click", countEnvelopes);
 
+const letterhead = document.querySelector("#letterhead");
+letterhead.addEventListener("click", countLetters);
+
+const Tshirt = document.querySelector("#Tshirt");
+Tshirt.addEventListener("click", countShirts);
+
+const frisbee = document.querySelector("#frisbee");
+frisbee.addEventListener("click", countFrisbee);
+
+const yoyo = document.querySelector("#yoyo");
+yoyo.addEventListener("click", countYoyo);
+
+//there display results inside fieldsets
 const envResult = document.querySelector("#envResult");
 const envResultJustTaxes = document.querySelector("#envResultJustTax");
 const lettResult = document.querySelector("#lettResult");
@@ -24,19 +37,6 @@ const frisbeeResult = document.querySelector("#frisbeeResult");
 const frisbeeResultJustTaxes = document.querySelector("#frisbeeResultJustTax");
 const yoyoResult = document.querySelector("#yoyoResult");
 const yoyoResultJustTaxes = document.querySelector("#yoyoResultJustTax");
-
-allButton.addEventListener("click", sumUpAll);
-//I had to attach the same functions to the button as to the change event, because IE <=11 didn't recognize type="number" and only accepted change from the keybord which, strangely enough, didn't fire any action even after hitting ENTER.
-envClick.addEventListener("click", countEnvelopes);
-lettClick.addEventListener("click", countLetters);
-shirtClick.addEventListener("click", countShirts);
-frisbeeClick.addEventListener("click", countFrisbee);
-yoyoClick.addEventListener("click", countYoyo);
-numberOfEnvelopes.addEventListener("change", countEnvelopes);
-numberOfLetters.addEventListener("change", countLetters);
-numberOfShirts.addEventListener("change", countShirts);
-numberOfFrisbee.addEventListener("change", countFrisbee);
-numberOfYoyo.addEventListener("change", countYoyo);
 
 //separate functions for counting each element
 
