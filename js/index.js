@@ -13,16 +13,12 @@ const numberOfYoyo = document.querySelector("#noYoyo");
 //event listeners - uses propagation
 const envelopes = document.querySelector("#envelopes");
 envelopes.addEventListener("click", countEnvelopes);
-
 const letterhead = document.querySelector("#letterhead");
 letterhead.addEventListener("click", countLetters);
-
 const Tshirt = document.querySelector("#Tshirt");
 Tshirt.addEventListener("click", countShirts);
-
 const frisbee = document.querySelector("#frisbee");
 frisbee.addEventListener("click", countFrisbee);
-
 const yoyo = document.querySelector("#yoyo");
 yoyo.addEventListener("click", countYoyo);
 
@@ -39,7 +35,6 @@ const yoyoResult = document.querySelector("#yoyoResult");
 const yoyoResultJustTaxes = document.querySelector("#yoyoResultJustTax");
 
 //separate functions for counting each element
-
 //Envelope counting
 function countEnvelopes() {
   let tax = document.querySelector("#envelopeTax"); //tax for this particular item
@@ -76,7 +71,6 @@ function countEnvelopes() {
     "Price for envelopes after taxation: $" + EnvJustTax;
   envResult.innerHTML = "Total price for envelopes: $" + EnvFinal.toFixed(2); //give cost with taxation and margin
 }
-
 // letters
 function countLetters() {
   let tax = document.querySelector("#letterTax");
@@ -109,7 +103,6 @@ function countLetters() {
     "Price for letterheads after taxation: $" + lettJustTax;
   lettResult.innerHTML = "Price for letterheads: $" + lettFinal.toFixed(2);
 }
-
 //count T-shirts
 function countShirts() {
   let tax = document.querySelector("#shirtTax");
@@ -142,7 +135,6 @@ function countShirts() {
     "Price for T-shirts after taxation: $" + shirtJustTax;
   shirtResult.innerHTML = "Total price for T-shirts: $" + shirtFinal.toFixed(2);
 }
-
 //count Frisbees
 function countFrisbee() {
   let tax = document.querySelector("#frisbeeTax");
@@ -175,7 +167,6 @@ function countFrisbee() {
     "Price for frisbees after taxation: $" + frisbeeJustTax;
   frisbeeResult.innerHTML = "Total price for frisbees: $" + frisbeeFinal.toFixed(2);
 }
-
 //count Yoyos
 function countYoyo() {
   let tax = document.querySelector("#yoyoTax");
@@ -208,7 +199,6 @@ function countYoyo() {
     "Price for frisbees after taxation: $" + yoyoJustTax;
   yoyoResult.innerHTML = "Total price for frisbees: $" + yoyoFinal.toFixed(2);
 }
-
 //Sum all function
 function sumUpAll() { /* All these functions are called for final evaluation to make sure none of the final prices returns undefined */
   countEnvelopes();
