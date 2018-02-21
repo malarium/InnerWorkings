@@ -210,9 +210,7 @@ function countYoyo() {
 }
 
 //Sum all function
-function sumUpAll() { /* All these functions are called for final evaluation for two reasons:
-   first: in case user forgets to click ADD button after changing the tax-free or extra-margin checkboxes.
-   Secondly - it makes sure none of the final prices returns undefined */
+function sumUpAll() { /* All these functions are called for final evaluation to make sure none of the final prices returns undefined */
   countEnvelopes();
   countLetters();
   countShirts();
