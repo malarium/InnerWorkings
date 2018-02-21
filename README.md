@@ -19,10 +19,6 @@ However this app is quite universal, you can do different jobs on it, not just t
 
 Checkboxes are disabled until amount of particular item is given.
 
-You can peek the results without counting total sum by clicking/unclicking checkbox and pressing APPLY button.
-
-If you click a checkbox but forget to press APPLY - no worries, it will be counted when you click "Count total expenses" button anyways.
-
 Enjoy!
 
 -----------------------------
